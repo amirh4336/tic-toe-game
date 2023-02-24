@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#player-two ,
+#player-one {
+  transition: all .2s ease;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>tic toe</title>
+</head>
+<body class="bg-slate-900 flex justify-center">
+  <main class="w-[500px] text-center text-[3rem] ">
+    <h2 class="text-white">Let 's play</h2>
+    
+    <!-- card play Start -->
+    <section class="card-play flex justify-center my-8">
+      <div id="player-one" class="border-4 w-[100px] mx-4 rounded-md p-2 bg-[#332167] ">
+        <figure><img class="rounded-full w-[70%] mx-auto" src="./img/images.png" alt="first"></figure>
+        <h4 class="text-white text-[1rem] mt-4">player 1</h4>
+        <img class="mx-auto w-[50px]" src="./img/Untitled-1.png" alt="sa">
+      </div>
+      <div id="player-two" class="w-[100px] mx-4 rounded-md p-2 bg-[#332167] ">
+        <figure><img class="rounded-full w-[70%] mx-auto" src="./img/Avatar-Profile-PNG-Photos.png" alt="second"></figure>
+        <h4 class="text-white text-[1rem] mt-4">player 2</h4>
+        <img class="mx-auto w-[50px]" src="./img/Untitled-2.png" alt="sa">
+      </div>
+    </section>
+    <!-- card play End -->
+
+    <section class="play-ground bg-[#6649c5] p-3 w-[400px] h-[400px] mx-auto rounded-lg grid grid-cols-3 grid-rows-3 gap-4">
+      <button onclick="myFunction(this)" id="1" title="place" class="place bg-[#332167] rounded-lg">
+        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
+        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
+      </button>
+      <button onclick="myFunction(this)" id="2" title="place" class="place bg-[#332167] rounded-lg">
+        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
+        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
+      </button>
+      <button onclick="myFunction(this)" id="3" title="place" class="place bg-[#332167] rounded-lg">
+        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
+        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
+      </button>
+      <button onclick="myFunction(this)" id="4" title="place" class="place bg-[#332167] rounded-lg">
+        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
+        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
+      </button>
+      <button onclick="myFunction(this)" id="5" title="place" class="place bg-[#332167] rounded-lg">
+        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
+        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
+      </button>
+      <button onclick="myFunction(this)" id="6" title="place" class="place bg-[#332167] rounded-lg">
+        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
+        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
+      </button>
+      <button onclick="myFunction(this)" id="7" title="place" class="place bg-[#332167] rounded-lg">
+        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
+        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
+      </button>
+      <button onclick="myFunction(this)" id="8" title="place" class="place bg-[#332167] rounded-lg">
+        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
+        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
+      </button>
+      <button onclick="myFunction(this)" id="9" title="place" class="place bg-[#332167] rounded-lg">
+        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
+        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
+      </button>
+    </section>
+
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
