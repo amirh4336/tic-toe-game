@@ -18,7 +18,7 @@
         <h4 class="text-white text-[1rem] mt-4">player 1</h4>
         <img class="mx-auto w-[50px]" src="./img/Untitled-1.png" alt="sa">
       </div>
-      <div id="player-two" class="w-[100px] mx-4 rounded-md p-2 bg-[#332167] ">
+      <div id="player-two" class="w-[100px] border-4 border-[#332167] mx-4 rounded-md p-2 bg-[#332167] ">
         <figure><img class="rounded-full w-[70%] mx-auto" src="./img/Avatar-Profile-PNG-Photos.png" alt="second"></figure>
         <h4 class="text-white text-[1rem] mt-4">player 2</h4>
         <img class="mx-auto w-[50px]" src="./img/Untitled-2.png" alt="sa">
@@ -26,43 +26,48 @@
     </section>
     <!-- card play End -->
 
-    <section class="play-ground bg-[#6649c5] p-3 w-[400px] h-[400px] mx-auto rounded-lg grid grid-cols-3 grid-rows-3 gap-4">
-      <button onclick="myFunction(this)" id="1" title="place" class="place bg-[#332167] rounded-lg">
-        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
-        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
-      </button>
-      <button onclick="myFunction(this)" id="2" title="place" class="place bg-[#332167] rounded-lg">
-        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
-        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
-      </button>
-      <button onclick="myFunction(this)" id="3" title="place" class="place bg-[#332167] rounded-lg">
-        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
-        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
-      </button>
-      <button onclick="myFunction(this)" id="4" title="place" class="place bg-[#332167] rounded-lg">
-        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
-        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
-      </button>
-      <button onclick="myFunction(this)" id="5" title="place" class="place bg-[#332167] rounded-lg">
-        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
-        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
-      </button>
-      <button onclick="myFunction(this)" id="6" title="place" class="place bg-[#332167] rounded-lg">
-        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
-        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
-      </button>
-      <button onclick="myFunction(this)" id="7" title="place" class="place bg-[#332167] rounded-lg">
-        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
-        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
-      </button>
-      <button onclick="myFunction(this)" id="8" title="place" class="place bg-[#332167] rounded-lg">
-        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
-        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
-      </button>
-      <button onclick="myFunction(this)" id="9" title="place" class="place bg-[#332167] rounded-lg">
-        <img class="hidden circle" src="./img/Untitled-1.png" alt="circle">
-        <img class="hidden cross" src="./img/Untitled-2.png" alt="cross">
-      </button>
+
+    
+    <section class="play-ground bg-[#6649c5] relative p-3 w-[400px] h-[400px] mx-auto rounded-lg grid grid-cols-3 grid-rows-3 gap-4">
+      <p id="win-message" class="text-white absolute top-[9rem] left-[3.2rem] text-[3rem] bg-orange-600 p-5 rounded-lg hidden "></p>
+
+
+      <div onclick="myFunction(this)" id="1" title="place" class="place bg-[#332167] rounded-lg">
+        <img id="circle1" class="hidden circle" src="./img/Untitled-1.png" alt="circle" />
+        <img id="cross1" class="hidden cross" src="./img/Untitled-2.png" alt="cross" />
+      </div>
+      <div onclick="myFunction(this)" id="2" title="place" class="place bg-[#332167] rounded-lg">
+        <img id="circle2" class="hidden circle" src="./img/Untitled-1.png" alt="circle" />
+        <img id="cross2" class="hidden cross" src="./img/Untitled-2.png" alt="cross" />
+      </div>
+      <div onclick="myFunction(this)" id="3" title="place" class="place bg-[#332167] rounded-lg">
+        <img id="circle3" class="hidden circle" src="./img/Untitled-1.png" alt="circle" />
+        <img id="cross3" class="hidden cross" src="./img/Untitled-2.png" alt="cross" />
+      </div>
+      <div onclick="myFunction(this)" id="4" title="place" class="place bg-[#332167] rounded-lg">
+        <img id="circle4" class="hidden circle" src="./img/Untitled-1.png" alt="circle" />
+        <img id="cross4" class="hidden cross" src="./img/Untitled-2.png" alt="cross" />
+      </div>
+      <div onclick="myFunction(this)" id="5" title="place" class="place bg-[#332167] rounded-lg">
+        <img id="circle5" class="hidden circle" src="./img/Untitled-1.png" alt="circle" />
+        <img id="cross5" class="hidden cross" src="./img/Untitled-2.png" alt="cross" />
+      </div>
+      <div onclick="myFunction(this)" id="6" title="place" class="place bg-[#332167] rounded-lg">
+        <img id="circle6" class="hidden circle" src="./img/Untitled-1.png" alt="circle" />
+        <img id="cross6" class="hidden cross" src="./img/Untitled-2.png" alt="cross" />
+      </div>
+      <div onclick="myFunction(this)" id="7" title="place" class="place bg-[#332167] rounded-lg">
+        <img id="circle7" class="hidden circle" src="./img/Untitled-1.png" alt="circle" />
+        <img id="cross7" class="hidden cross" src="./img/Untitled-2.png" alt="cross" />
+      </div>
+      <div onclick="myFunction(this)" id="8" title="place" class="place bg-[#332167] rounded-lg">
+        <img id="circle8" class="hidden circle" src="./img/Untitled-1.png" alt="circle" />
+        <img id="cross8" class="hidden cross" src="./img/Untitled-2.png" alt="cross" />
+      </div>
+      <div onclick="myFunction(this)" id="9" title="place" class="place bg-[#332167] rounded-lg">
+        <img id="circle9" class="hidden circle" src="./img/Untitled-1.png" alt="circle" />
+        <img id="cross9" class="hidden cross" src="./img/Untitled-2.png" alt="cross" />
+      </div>
     </section>
 
   </main>
